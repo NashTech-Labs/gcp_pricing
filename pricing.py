@@ -62,7 +62,7 @@ def get_data(url,nextPageToken=''):
         service_selected = service["displayName"]
         if service_selected in services_required:
             SERVICE_ID = service["serviceId"] 
-            get_service_data(count,API_KEY,SERVICE_ID,service_selected) 
+            get_service_data(API_KEY,SERVICE_ID,service_selected) 
 
 def get_services_index(url, API_KEY):
     url = url + "?key=" + API_KEY
